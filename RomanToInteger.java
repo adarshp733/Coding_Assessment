@@ -17,7 +17,7 @@ public class RomanToInteger {
     }
 
     public static int romanToInt(String s) {
-        // Create a map to store Roman numeral characters and their corresponding values
+        // Create a map to store Roman number characters and their corresponding values
         Map<Character, Integer> romanValues = new HashMap<>();
         romanValues.put('I', 1);
         romanValues.put('V', 5);
@@ -30,12 +30,12 @@ public class RomanToInteger {
         int result = 0;
         int prevValue = 0; // Initialize the previous value to 0
 
-        // Iterate through the Roman numeral string from right to left
+        // Iterate through the Roman number string from right to left
         for (int i = s.length() - 1; i >= 0; i--) {
             char currentChar = s.charAt(i);
             int currentValue = romanValues.get(currentChar);
 
-            // Check if we need to subtract the current value (e.g., IV for 4)
+            // Check if we need to subtract the current value (e.g.:- IV for 4)
             if (currentValue < prevValue) {
                 result -= currentValue;
             } else {
