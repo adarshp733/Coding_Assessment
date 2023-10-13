@@ -5,7 +5,6 @@ function sortDescending(arr) {
     });
 }
 
-// Example array
 const numbers = [5, 1, 9, 3, 7];
 
 console.log('Before Sorting :', numbers);
